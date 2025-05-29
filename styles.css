@@ -1,0 +1,97 @@
+.background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(255, 205, 205, 0.6);
+    /* overflow: hidden; */
+    z-index: -2;
+}
+
+/*  */
+
+
+
+/* Section containers */
+.bioSection, .tvSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    padding: 5vh 30vw;
+    gap: 22px;
+    
+  }
+  
+
+  /* Frame and photo */
+  .frameContainer {
+    position: relative;
+    width: 35vw;
+    
+  }
+  
+  .frameImage {
+    width: 100%;
+  }
+  
+  .shownImage {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 82%;
+    z-index: -1;
+  }
+  
+  /* Plaque */
+  .plaqueWrapper {
+    position: relative;
+    width: 30vw;     /* or whatever size works */
+    transform: rotate(90deg); /* Optional if you still want it rotated */
+    margin-top: -10vh;
+    
+  }
+  
+  .plaque {
+    width: 100%;
+    display: block;
+  }
+  
+  .textOnPlaque {
+    position: absolute;
+    top: 25%;       /* Tweak these values to center properly */
+    left: 10%;
+    width: 80%;
+    text-align: center;
+    font-size: 1.2vw;
+    color: #e9cdab;
+    font-family: Georgia, serif;
+    transform: rotate(-90deg); /* counter-rotate text if plaque is rotated */
+    text-shadow: 1px 1px  #e9cdab44;
+}
+  
+  /* TV section */
+  .tvContainer {
+    position: relative;
+    width: 60vw;
+  }
+  
+  .tvImage {
+    width: 100%;
+  }
+  
+  .tvVideo {
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    width: 69%;
+    height: 65%;
+    background: black;
+    z-index: 1;
+  }
+  
+  /* Button */
+  .projectButton img {
+    width: 5vw;
+  }

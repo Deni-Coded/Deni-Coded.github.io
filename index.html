@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Denis' Portfollio Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <!-- First part is going to be a picture frame with me and then a plaque with a bit of info on me, could add fog to it for person to unfog-->
+    <!-- Section 1: Frame + Plaque + Text -->
+    <section class="bioSection">
+        
+        <div class="frameContainer">
+          <img src="picFrame.png" alt="Frame" class="frameImage">
+          <img src="dgProf.png" alt="Denis" class="shownImage">
+        </div>
+      
+        <div class="plaqueWrapper">
+          <img src="plaque.png" alt="Plaque" class="plaque">
+          <div class="textOnPlaque">
+            <p>
+              Hi! I'm Denis Gilevskiy, from Ireland. Currently, I'm studying Neurobiology 
+              with a minor in Computer Science at Harvard. I have a self-driven interest in learning 
+              the whole world of CS. Currently I am diving into the world of machine learning and Artificial 
+              Intelligence and hope to combine Neurobiology with the developments in AI to better the world 
+              of health for everyone.
+            </p>
+          </div>
+        
+        </div>
+      
+    </section>
+    
+    <!-- Section 2: TV Project Display -->
+    <section class="tvSection">
+        <div class="tvContainer">
+        <img src="TV.png" alt="TV Frame" class="tvImage">
+        <video class="tvVideo" controls muted>
+            <source src="Videos/emailFilteringProject.mp4" type="video/mp4">
+        </video>
+        </div>
+    
+        <button type="button" onclick="alert('Clicked!')" class="projectButton">
+        <img src="emailFilter.png" alt="Email Filter Thumbnail" />
+        </button>
+    </section>
+  </body>
+</html>
